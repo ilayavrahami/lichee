@@ -241,12 +241,14 @@ nav a:hover, .nav-cta:hover, footer a:hover {
 }
 
 .release-art img {
-  width: 360px;
-  height: 420px;
-  object-fit: cover;
+  width: min(100%, 560px);
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
   border-radius: 4px;
-  transform: rotate(4deg);
+  transform: rotate(2deg);
   filter: saturate(0.85);
+  display: block;
 }
 
 .release-glow {
@@ -549,8 +551,10 @@ footer .footer-brand {
     height: 380px;
   }
   .release-art img {
-    width: 270px;
-    height: 330px;
+    width: min(100%, 520px);
+    height: auto;
+    max-height: 330px;
+    object-fit: contain;
   }
   .countdown {
     gap: 13px;
