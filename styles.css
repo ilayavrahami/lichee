@@ -599,3 +599,24 @@ footer .footer-brand {
     align-items: flex-start;
   }
 }
+/* Socials & expanded artist bio */
+.social-mini { display:flex; gap:24px; align-items:center; }
+.about-secondary { font-size:16px; line-height:1.7; margin:22px 0 0; }
+.about-text strong { color:#fff; font-weight:600; }
+.socials { border-top:1px solid var(--line); }
+.socials-heading { display:flex; align-items:end; justify-content:space-between; gap:50px; margin:25px 0 45px; }
+.socials-heading h2 { margin:0; }
+.socials-heading p { max-width:360px; color:var(--muted); line-height:1.6; margin:0 0 8px; }
+.social-grid { border-top:1px solid var(--line); }
+.social-grid a { display:flex; justify-content:space-between; align-items:center; padding:24px 4px; border-bottom:1px solid var(--line); color:#f5f2f7; text-decoration:none; font-family:'Space Grotesk'; font-size:clamp(24px,4vw,48px); letter-spacing:-.04em; transition:.3s; }
+.social-grid a span:last-child { font-family:'DM Sans'; font-size:22px; color:#8d8792; transition:.3s; }
+.social-grid a:hover { padding-left:16px; padding-right:16px; background:linear-gradient(90deg,rgba(255,255,255,.035),transparent); }
+.social-grid a:hover span:last-child { color:var(--accent); transform:translate(4px,-4px); }
+.footer-socials { display:flex; gap:18px; flex-wrap:wrap; }
+
+@media (max-width:800px) {
+  .social-mini { gap:14px; }
+  .socials-heading { display:block; }
+  .socials-heading p { margin-top:25px; }
+  .footer-socials { gap:12px; }
+}
